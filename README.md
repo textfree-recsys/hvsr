@@ -97,26 +97,8 @@ Note: PyTorch (open-clip) is used only to extract frozen CLIP features; training
 - kNN uses `NearestNeighbors(metric='cosine')`. For very large catalogs, consider FAISS IVFPQ.
 - If you see OOM, reduce `--batch-size` or `--num-neg`.
 
----
-
-## Citation
-If this project helps your research, please cite:
-
-Malhi, U. S., Siddeeq, S., Rasool, A., & Zhou, J. (2025).
-Text-free visual–semantic recommendation via residual fusion and CLIP-guided negatives for cold-start.
-Knowledge-Based Systems. Code: https://github.com/your-org/hvsr  DOI: 10.5281/zenodo.XXXXXX
-
-(Replace `your-org` and the DOI with your actual values.)
-
----
-
-## License
-Code: MIT (see LICENSE).  
-Data: Follow original dataset licenses/terms (Amazon/Tradesy, DVBPR preprocessing).
-
----
-
-## Contact
-Maintainer: Your Name  
-Email: you@example.com  
-GitHub: https://github.com/your-org/hvsr
+## Acknowledgments 
+- DVBPR data format/baselines: Kang et al., “Visually-Aware Fashion Recommendation and
+Design with Generative Image Models” 
+- CLIP image encoder: Radford et al., “Learning Transferable Visual Models From Natural Language Supervision” 
+- Thanks to the open-source community (TensorFlow, PyTorch, open-clip, scikit-learn).
